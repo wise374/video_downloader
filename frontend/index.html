@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader - Download Your Favorite Videos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <a href="/" id="siteLogo">
+                        <i class="fas fa-download"></i>
+                        <span>Video Downloader</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-to">How to Use</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Download Videos with Ease</h1>
+                    <p>Fast, free, and easy to use video downloader for YouTube, Facebook, and Instagram</p>
+                </div>
+                <div class="download-box">
+                    <div class="platform-selector">
+                        <button class="platform-btn active" data-platform="youtube">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </button>
+                        <button class="platform-btn" data-platform="facebook">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </button>
+                        <button class="platform-btn" data-platform="instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="videoUrl" placeholder="Paste video URL here...">
+                        <button class="btn-paste">
+                            <i class="fas fa-paste"></i>
+                        </button>
+                        <button id="previewBtn" class="btn-primary">
+                            <i class="fas fa-search"></i> Preview
+                        </button>
+                    </div>
+                    <div id="previewContainer" class="preview-container hidden">
+                        <div class="video-info">
+                            <img id="thumbnail" src="" alt="Video thumbnail">
+                            <div class="video-details">
+                                <h3 id="videoTitle"></h3>
+                                <p id="videoDuration"></p>
+                            </div>
+                        </div>
+                        <div class="preview-actions">
+                            <button id="downloadBtn" class="btn-primary">
+                                <i class="fas fa-download"></i> Download
+                            </button>
+                        </div>
+                    </div>
+                    <div id="downloadOptions" class="download-options hidden">
+                        <!-- Download options will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2>Why Choose Our Downloader?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Fast Download</h3>
+                        <p>Lightning-fast download speeds for your videos</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safe & Secure</h3>
+                        <p>100% safe downloads with no malware</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-infinity"></i>
+                        <h3>Multiple Platforms</h3>
+                        <p>Download from YouTube, Facebook, and Instagram</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to" class="how-to">
+            <div class="container">
+                <h2>How to Download Videos</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Select Platform</h3>
+                        <p>Choose your video platform (YouTube, Facebook, or Instagram)</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Paste URL</h3>
+                        <p>Copy and paste the video URL in the download box</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Download</h3>
+                        <p>Click download and choose your preferred quality</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Video Downloader</h3>
+                    <p>Your trusted video downloading solution</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-to">How to Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Video Downloader. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
